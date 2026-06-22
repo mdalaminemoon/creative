@@ -1,0 +1,382 @@
+/* Common CSS Starts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.sectionTitle {
+  color: #181818;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.sectionDescription {
+  width: 542px;
+  margin: 20px auto 0;
+  color: #181818b3;
+  text-align: center;
+  line-height: 27px;
+}
+/* Common CSS Ends */
+
+/* Header Part Starts */
+#headerPart {
+  margin: 33px 0;
+}
+.navFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLinks ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.navLinks ul li {
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.navLinks ul li:hover {
+  color: #5956e8;
+}
+.headerBtn button {
+  background: #5956e8;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 13px 24px;
+  border-radius: 10px;
+}
+/* Header Part Ends */
+
+/* Hero Section Starts */
+#heroSection {
+  background: #5956e8;
+}
+.heroFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 182px 0;
+}
+.heroLeft h1 {
+  width: 501px;
+  color: white;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.heroLeft p {
+  width: 542px;
+  color: white;
+  line-height: 27px;
+  margin: 25px 0;
+}
+.heroBtn button {
+  padding: 13px 22px;
+  background: white;
+  color: #5956e8;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+/* Hero Section Ends */
+
+/* Service Section Starts */
+#service {
+  margin-top: 100px;
+}
+.serviceCardFlex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.serviceCard {
+  width: 370px;
+  padding: 63px 48px;
+  background: white;
+  border: 0.3px solid #e3e3e3;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.serviceCard h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #181818;
+  font-size: 25px;
+  font-weight: 700;
+}
+.serviceCard p {
+  width: 274px;
+  color: #181818b3;
+  line-height: 27px;
+}
+.icon {
+  width: 71px;
+  height: 71px;
+  background: white;
+  color: #5956e8;
+  border: 0.5px solid #5956e8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.serviceCard:hover {
+  box-shadow: 0 4px 4px 0 #00000040;
+  .icon {
+    background: #5956e8;
+    color: white;
+  }
+}
+/* Service Section Ends */
+
+/* Portfolio Section Starts */
+#portfolio {
+  margin-top: 100px;
+}
+.portfolioCardFlex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.portfolioCard {
+  width: 270px;
+  position: relative;
+}
+.portfolioImg {
+  width: 100%;
+}
+.portfolioDetails {
+  width: 230px;
+  border-radius: 10px;
+  padding: 25px 0;
+  background: transparent;
+  position: absolute;
+  bottom: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+.portfolioDetails h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: transparent;
+  text-align: center;
+  transition: all 0.3s;
+}
+.portfolioDetailsLink {
+  width: 119px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.portfolioDetailsLink a {
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+}
+.portfolioCard:hover {
+  .portfolioDetails {
+    background: #5956e8;
+  }
+  .portfolioDetails h3 {
+    color: white;
+  }
+  .portfolioDetailsLink {
+    visibility: visible;
+  }
+}
+/* Portfolio Section Ends */
+
+/* Team Member Section Starts */
+#teamMember {
+  margin-top: 100px;
+}
+.memberCardFlex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Team Member Section Ends */
+
+/* Customer Experience Section Starts */
+#customerExp {
+  margin-top: 142px;
+}
+#customerExp .sectionTitle {
+  width: 603px;
+}
+#customerExp .sectionTitle, #customerExp .sectionDescription {
+  text-align: left;
+  margin: 20px 0 0 0;
+}
+.customerReviewCardFlex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.customerReviewCard {
+  padding: 48px 0 47px 48px;
+  width: 370px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 #00000023;
+  position: relative;
+}
+.rating {
+  margin-top: 30px;
+  display: flex;
+  gap: 7px;
+}
+.reviewDesc {
+  width: 274px;
+  margin-top: 20px;
+  color: #181818b3;
+  line-height: 27px;
+}
+.customerReviewCard h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.reviewCardRole {
+  color: #5D5D5D;
+}
+.quotationMark {
+  position: absolute;
+  right: 31px;
+  bottom: 24px;
+}
+/* Customer Experience Section Ends */
+
+/* Latest News Section Starts */
+#latestNews {
+  margin-top: 142px;
+}
+.newsCardFlex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.newsCard {
+  width: 370px;
+  padding: 17px 19px;
+  background: white;
+  border: 0.5px solid #E3E3E3;
+  border-radius: 10px;
+}
+.newsCardImg img{
+  width: 100%;
+}
+.userInfo {
+  display: flex;
+  gap: 10px;
+}
+.uploadDate {
+  display: flex;
+  gap: 10px;
+}
+.userInfoAndUploadDate {
+  margin-top: 19px;
+  display: flex;
+  gap: 30px;
+}
+.newsCard h3 {
+  width: 271px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.newsCard p {
+  width: 300px;
+  margin-top: 15px;
+  color: #5D5D5D;
+  font-size: 16px;
+  line-height: 27px;
+}
+.learnMore {
+  margin-top: 10px;
+}
+.learnMore a {
+  font-weight: 600;
+}
+/* Latest News Section Ends */
+
+/* Footer Part Starts */
+#footer {
+  margin-top: 100px;
+  padding: 100px 0;
+  background: #5956e81a;
+}
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.footerLeft p {
+  width: 300px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #5D5D5D;
+  line-height: 27px;
+}
+.socialLinks {
+  display: flex;
+  gap: 15px;
+}
+.socialLogo {
+  background: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerLinksFlex {
+  width: 710px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerLinksContainer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.footerLink {
+  margin-top: 15px;
+}
+.footerLink a {
+  color: #5D5D5D;
+}
+/* Footer Part Ends */
